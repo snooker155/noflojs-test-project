@@ -1,0 +1,33 @@
+{
+  "inports": {},
+  "outports": {},
+  "groups": [],
+  "processes": {
+    "Read": {
+      "component": "filesystem/ReadFile"
+    },
+    "Display": {
+      "component": "core/Output"
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "process": "Read",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "Display",
+        "port": "in"
+      }
+    },
+    {
+      "data": "package.json",
+      "tgt": {
+        "process": "Read",
+        "port": "in"
+      }
+    }
+  ],
+  "caseSensitive": false
+}

@@ -1,0 +1,40 @@
+{
+  "inports": {},
+  "outports": {},
+  "groups": [],
+  "processes": {
+    "Multiply": {
+      "component": "math/Multiply"
+    },
+    "Display": {
+      "component": "core/Output"
+    }
+  },
+  "connections": [
+    {
+      "data": "6",
+      "tgt": {
+        "process": "Multiply",
+        "port": "multiplicand"
+      }
+    },
+    {
+      "data": "7",
+      "tgt": {
+        "process": "Multiply",
+        "port": "multiplier"
+      }
+    },
+    {
+      "src": {
+        "process": "Multiply",
+        "port": "product"
+      },
+      "tgt": {
+        "process": "Display",
+        "port": "in"
+      }
+    }
+  ],
+  "caseSensitive": false
+}
