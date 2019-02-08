@@ -1,0 +1,15 @@
+{
+  "id": "d1727efa-7d8e-43c4-9bce-f3a1b1a01f02",
+  "label": "noflojs-test-project NoFlo runtime",
+  "secret": "fesakudigu",
+  "permissions": {
+    "fesakudigu": [
+      "protocol:component",
+      "protocol:runtime",
+      "protocol:graph",
+      "protocol:network",
+      "component:getsource",
+      "component:setsource"
+    ]
+  }
+}
